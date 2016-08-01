@@ -11,8 +11,6 @@ namespace QCBarcoding
   [Activity(Label = "QCBarcoding", MainLauncher = true, Icon = "@drawable/icon")]
   public class MainActivity : Activity
   {
-    int count = 1;
-
     protected override void OnCreate(Bundle bundle)
     {
       base.OnCreate(bundle);
@@ -22,9 +20,21 @@ namespace QCBarcoding
 
       // Get our button from the layout resource,
       // and attach an event to it
-      Button button = FindViewById<Button>(Resource.Id.MyButton);
+      Button JobButton = FindViewById<Button>(Resource.Id.JobButton);
+      JobButton.Click += JobButtonClick;
 
-      button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+      Button SynchButton = FindViewById<Button>(Resource.Id.SynchButton);
+      SynchButton.Click += SynchButtonClick;
+    }
+
+    protected void SynchButtonClick (object sender, EventArgs ea)
+    {
+       this.StartActivity(typeof(Synch));
+    }
+
+    protected void JobButtonClick (object sender, EventArgs ea)
+    {
+       this.StartActivity(typeof(Jobs));
     }
   }
 }
