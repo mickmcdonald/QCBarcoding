@@ -3,4 +3,5 @@
   <string name="ApplicationName">QCBarcoding</string>
   <string name="Jobs">Jobs</string>
   <string name="Synch">Synch</string>
+  <string name="Exit">Exit</string>
 </resources>

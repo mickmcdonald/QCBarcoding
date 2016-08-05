@@ -25,6 +25,9 @@ namespace QCBarcoding
 
       Button SynchButton = FindViewById<Button>(Resource.Id.SynchButton);
       SynchButton.Click += SynchButtonClick;
+
+      Button ExitButton = FindViewById<Button>(Resource.Id.ExitButton);
+      ExitButton.Click += ExitButtonClick;
     }
 
     protected void SynchButtonClick (object sender, EventArgs ea)
@@ -36,6 +39,12 @@ namespace QCBarcoding
     {
        this.StartActivity(typeof(Jobs));
     }
+
+    protected void ExitButtonClick(object sender, EventArgs ea)
+    {
+       System.Environment.Exit(0);
+    }
+    
   }
 }
 

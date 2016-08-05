@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:overScrollMode="ifContentScrolls"
+        p1:scrollbars="vertical"
+        p1:scrollbarStyle="insideOverlay"
+        p1:clipChildren="false"
+        p1:id="@+id/linearLayout1">
+        <TextView
+            p1:text="Job No"
+            p1:textAppearance="?android:attr/textAppearanceMedium"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textJobNo" />
+        <TextView
+            p1:text="Part #:"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:textStyle="bold" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editPartNo"
+            p1:maxLength="25"
+            p1:inputType="text" />
+        <TextView
+            p1:text="Serial #:"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:textStyle="bold" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editSerialNo"
+            p1:maxLength="25"
+            p1:inputType="text" />
+        <TextView
+            p1:text="Lot #:"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:textStyle="bold" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editLotNo"
+            p1:maxLength="25"
+            p1:inputType="text" />
+        <TextView
+            p1:text="Manufacture Date:"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView1"
+            p1:textStyle="bold" />
+        <EditText
+            p1:inputType="date"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editText1" />
+        <TextView
+            p1:text="Container Qty:"
+            p1:textAppearance="?android:attr/textAppearanceSmall"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/textView4" />
+        <EditText
+            p1:inputType="number"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/editQuantity" />
+        <Button
+            p1:text="Enter Defect Data"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/button1" />
+        <ScrollView
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/scrollView1" />
+    </LinearLayout>
+</ScrollView>

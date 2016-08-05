@@ -34,6 +34,14 @@ namespace QCBarcoding
       //ArrayAdapter<string> ListAdapter = new ArrayAdapter<String>(this, Android.Resource.Layout.SimpleListItem1, items);
       //progList.Adapter = ListAdapter;
       ListJobs();
+
+      if(jobListView != null) {
+				jobListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
+					var taskDetails = new Intent (this, typeof (JobDetails));
+					taskDetails.PutExtra ("JobID", jobs[e.Position].Id);
+					StartActivity (taskDetails);
+				};
+        }
     }
 
     protected override void OnResume()

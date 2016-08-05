@@ -65,9 +65,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\PartListAdapter.cs" />
     <Compile Include="Adapters\JobListAdapter.cs" />
+    <Compile Include="PartForm.cs" />
+    <Compile Include="JobDetails.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Jobs.cs" />
+    <Compile Include="model\PartRepository.cs" />
+    <Compile Include="model\PartDatabase.cs" />
+    <Compile Include="model\Part.cs" />
     <Compile Include="model\Job.cs" />
     <Compile Include="model\JobDatabase.cs" />
     <Compile Include="model\JobRepositoryClass1.cs" />
@@ -82,6 +88,12 @@
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\Jobs.axml">
       <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\JobDetails.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PartForm.axml">
+      <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
